@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Universidad Politécnica del Centro - UPC Tabasco</title>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="#home" class="logo">
+                    <img src="assets/logo.webp" alt="Logo UPC Tabasco" class="logo-image">
+                </a>
+                <div class="social-links">
+                    <a href="https://m.facebook.com/107347049418324/" class="social-link facebook">
+                        <img src="assets/icons/facebook.svg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://x.com/UPCTabasco" class="social-link x">
+                        <img src="assets/icons/x.svg" alt="X" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/upctabasco/" class="social-link instagram">
+                        <img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about-us">Conocenos</a></li>
+                <li><a href="#oferta-ed">Oferta Educativa</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#vinculacion">Vinculación</a></li>
+                <li><a href="#normatividad">Normatividad</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slides" id="carouselSlides">
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+            </div>
+            <div class="carousel-overlay"></div>
+        </div>
+        
+        <button class="carousel-nav prev" id="prevBtn">‹</button>
+        <button class="carousel-nav next" id="nextBtn">›</button>
+        
+        <div class="carousel-indicators" id="indicators">
+            <div class="indicator active" data-slide="0"></div>
+            <div class="indicator" data-slide="1"></div>
+            <div class="indicator" data-slide="2"></div>
+            <div class="indicator" data-slide="3"></div>
+            <div class="indicator" data-slide="4"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Universidad Politécnica del Centro</h1>
+            <p>Formando profesionales útiles con calidad humana y académica para el desarrollo de Tabasco y México</p>
+            <a href="#oferta-ed" class="cta-button">Conoce Nuestras Carreras</a>
+        </div>
+    </section>
+
+    <!-- Carreras -->
+    <section class="section" id="oferta-ed">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestras Carreras</h2>
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                    </div>
+                    <h3>Ingeniería en Biotecnología</h3>
+                    <p>Forma profesionales capaces de aplicar la biotecnología en procesos industriales y ambientales, contribuyendo al desarrollo sustentable.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.7 6.3C15.1 5.9 15.7 5.9 16.1 6.3L17.7 7.9C18.1 8.3 18.1 8.9 17.7 9.3L9 18H5V14L13.7 5.3C14.1 4.9 14.7 4.9 15.1 5.3L14.7 6.3Z"/>
+                        </svg>
+                    </div>
+                    <h3>Ingeniería Mecatrónica</h3>
+                    <p>Integra conocimientos de mecánica, electrónica y sistemas de control para crear soluciones tecnológicas innovadoras.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22 12C22 6.48 17.52 2 12 2S2 6.48 2 12C2 17.52 6.48 22 12 22S22 17.52 22 12Z"/>
+                            <path d="M8 12L11 15L16 10"/>
+                        </svg>
+                    </div>
+                    <h3>Ingeniería en Electrónica y Telecomunicaciones</h3>
+                    <p>Prepara especialistas en sistemas de comunicación y tecnologías de la información para la era digital.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 9L12 2L21 9V20C21 20.5 20.5 21 20 21H4C3.5 21 3 20.5 3 20V9Z"/>
+                            <path d="M9 22V12H15V22"/>
+                        </svg>
+                    </div>
+                    <h3>Ingeniería en Geofísica Petrolera</h3>
+                    <p>Especialistas en exploración y caracterización de yacimientos petroleros utilizando métodos geofísicos avanzados.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.92 18 21.92S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z"/>
+                        </svg>
+                    </div>
+                    <h3>Ingeniería en Mecánica Automotriz</h3>
+                    <p>Forma expertos en diseño, manufactura y mantenimiento de sistemas automotrices modernos.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z"/>
+                        </svg>
+                    </div>
+                    <h3>Ingeniería en Software</h3>
+                    <p>Desarrolla profesionales capaces de crear soluciones informáticas innovadoras y sistemas de software robustos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="section stats">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Nuestra Excelencia en Números</h2>
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <h3>15+</h3>
+                    <p>Años de Excelencia</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>11</h3>
+                    <p>Programas Académicos</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>2000+</h3>
+                    <p>Egresados Exitosos</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>85%</h3>
+                    <p>Empleabilidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+        <div class="container">
+            <h2 class="section-title fade-in">Servicios</h2>
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Misión</h3>
+                    <p>Impartir educación superior a través de la generación, aplicación y difusión del conocimiento y la cultura tecnológica, para formar de manera integral personas útiles, con calidad humana y académica.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8S14 8.9 14 10C14 12 12 11.75 12 15H14C14 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"/>
+                        </svg>
+                    </div>
+                    <h3>Visión</h3>
+                    <p>Constituirse en generador del desarrollo económico y social del progreso del Estado de Tabasco y de la nación, mediante el desarrollo de una investigación y docencia de calidad.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 6L18.29 8.29L13.41 13.17L9.41 9.17L2 16.59L3.41 18L9.41 12L13.41 16L20.71 8.71L23 11V6H16Z"/>
+                        </svg>
+                    </div>
+                    <h3>Excelencia Académica</h3>
+                    <p>Formamos personas de manera integral, dotándolas de las competencias técnicas y humanísticas necesarias para enfrentar los retos del siglo XXI con éxito profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Universidad Politécnica del Centro</h3>
+                    <p>Formando el futuro de Tabasco con excelencia académica y valores humanos.</p>
+                    <p><strong>Dirección:</strong><br>
+                    Carretera Federal Villahermosa - Teapa, Km. 22.5<br>
+                    Tumbulushal, Centro, Tabasco. C.P. 86290</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><strong>Teléfono:</strong><br>
+                    (+52) 993 312 58 93</p>
+                    <p><strong>Email:</strong><br>
+                    informes@updc.edu.mx</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li><a href="#">Admisiones</a></li>
+                        <li><a href="#">Biblioteca Digital</a></li>
+                        <li><a href="#">Portal Estudiantes</a></li>
+                        <li><a href="#">Bolsa de Trabajo</a></li>
+                        <li><a href="#">Transparencia</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="https://m.facebook.com/107347049418324/">Facebook</a></li>
+                        <li><a href="https://x.com/UPCTabasco">X</a></li>
+                        <li><a href="https://www.instagram.com/upctabasco/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@papillonupc6087">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universidad Politécnica del Centro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
