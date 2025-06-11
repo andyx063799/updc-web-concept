@@ -1,0 +1,258 @@
+<!-- Concepto Web Basico de la Pagina UPC -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Universidad Politécnica del Centro - UPC Tabasco</title>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="#home" class="logo">
+                    <img src="assets/logo.webp" alt="Logo UPC Tabasco" class="logo-image">
+                </a>
+                <div class="social-links">
+                    <a href="https://m.facebook.com/107347049418324/" class="social-link facebook">
+                        <img src="assets/icons/facebook.svg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://x.com/UPCTabasco" class="social-link x">
+                        <img src="assets/icons/x.svg" alt="X" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/upctabasco/" class="social-link instagram">
+                        <img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about-us">Conocenos</a></li>
+                <li><a href="#oferta-ed">Oferta Educativa</a></li>
+                <li class="dropdown">
+                    <a href="#servicios" class="dropdown-btn">Servicios</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <span class="option-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </span>
+                            <span class="option-text">SIUPC - Administrativos</span>
+                        </div>
+                        <div class="dropdown-item">
+                            <span class="option-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </span>
+                            <span class="option-text">SIUPC - Estudiantes</span>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#vinculacion">Vinculación</a></li>
+                <li><a href="#normatividad">Normatividad</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slides" id="carouselSlides">
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+                <div class="carousel-slide"></div>
+            </div>
+            <div class="carousel-overlay"></div>
+        </div>
+        
+        <button class="carousel-nav prev" id="prevBtn">‹</button>
+        <button class="carousel-nav next" id="nextBtn">›</button>
+        
+        <div class="carousel-indicators" id="indicators">
+            <div class="indicator active" data-slide="0"></div>
+            <div class="indicator" data-slide="1"></div>
+            <div class="indicator" data-slide="2"></div>
+            <div class="indicator" data-slide="3"></div>
+            <div class="indicator" data-slide="4"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Universidad Politécnica del Centro</h1>
+            <p>Formando profesionales útiles con calidad humana y académica para el desarrollo de Tabasco y México</p>
+            <a href="#oferta-ed" class="cta-button">Conoce Nuestras Carreras</a>
+        </div>
+    </section>
+
+    <!-- Noticias Section -->
+    <section class="section" id="noticias">
+        <div class="news-section">
+            <h2 class="section-title">Noticias Papillón</h2>
+            
+            <div class="noticias-container">
+                <div class="noticias-wrapper" id="noticiasWrapper">
+                    <!-- Noticia 1 -->
+                    <div class="news-card">
+                        <img src="./assets/news/1.jpg" alt="Concurso" class="news-image">
+                        <div class="news-category evento">Concurso</div>
+                        <div class="news-content">
+                            <h3 class="news-title">Estudiante de la Ing. En Geofísica Petrolera de la UPC, ha llegado a la final del concurso estatal de oratoria.</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </div>
+    
+                    <!-- Noticia 2 -->
+                    <div class="news-card">
+                        <img src="./assets/news/2.jpg" alt="Relevante" class="news-image">
+                        <div class="news-category">Relevante</div>
+                        <div class="news-content">
+                            <h3 class="news-title">Nuestra casa de estudios recibió la visita de la Rectora de la Universidad Politécnica de Chiapas, fortaleciendo lazos y abriendo nuevas oportunidades de colaboración.</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </div>
+    
+                    <!-- Noticia 3 -->
+                    <div class="news-card">
+                        <img src="./assets/news/3.jpg" alt="Relevante" class="news-image">
+                        <div class="news-category">Relevante</div>
+                        <div class="news-content">
+                            <h3 class="news-title">Con entusiasmo, los futuros egresados de la UPC presentaron sus estadías finales en la sala “Lácides García Detjen”. ¡Un paso clave rumbo a su titulación!</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </div>
+    
+                    <!-- Noticia 4 -->
+                    <div class="news-card">
+                        <img src="./assets/news/4.jpg" alt="Conferencia" class="news-image">
+                        <div class="news-category">Conferencia</div>
+                        <div class="news-content">
+                            <h3 class="news-title">En el Día Mundial del Medio Ambiente, se realizó la conferencia Impacto de los agroquímicos en suelos de banano, impartida por el Dr. Juan Carlos Rodríguez Cabriales.</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </div>
+    
+                    <!-- Noticia 5 -->
+                    <div class="news-card">
+                        <img src="./assets/news/5.jpg" alt="Evento" class="news-image">
+                        <div class="news-category evento">Evento</div>
+                        <div class="news-content">
+                            <h3 class="news-title">El Mtro. José Luis Cortés Peñaloza, Rector de la UPC, asistió como invitado a la Feria Medioambiental GEOLIS, bajo el lema “Lucha contra la contaminación por plásticos”.</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="noticias-controls">
+                <button class="noticias-btn" id="prevBtnNoticias">‹</button>
+                <button class="noticias-btn" id="nextBtnNoticias">›</button>
+            </div>
+    
+            <div class="dots" id="dotsContainerNoticias"></div>
+    
+            <button class="view-more-btn" onclick="viewMoreNews()">Leer más noticias</button>
+        </div>    
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="section stats">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Nuestra Excelencia en Números</h2>
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <h3>15+</h3>
+                    <p>Años de Excelencia</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>11</h3>
+                    <p>Programas Académicos</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>2000+</h3>
+                    <p>Egresados Exitosos</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>85%</h3>
+                    <p>Empleabilidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicacion -->
+     <section class="section ubicacion">
+        <div class="container">
+            <h2 class="section-title">Visita Nuestro Campus</h2>
+            <div class="ubicacion-grid">
+                <div class="ubicacion-item fade-in">
+                    <h3>Conoce los espacios que hemos creado para inspirar tu aprendizaje, crecimiento y desarrollo profesional. ¡Te esperamos!</h3>
+                </div>
+                <div class="map-container fade-in">
+                    <div id="map" class="map-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Universidad Politécnica del Centro</h3>
+                    <p>Formando el futuro de Tabasco con excelencia académica y valores humanos.</p>
+                    <p><strong>Dirección:</strong><br>
+                    Carretera Federal Villahermosa - Teapa, Km. 22.5<br>
+                    Tumbulushal, Centro, Tabasco. C.P. 86290</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><strong>Teléfono:</strong><br>
+                    (+52) 993 312 58 93</p>
+                    <p><strong>Email:</strong><br>
+                    difusion@updc.edu.mx</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li><a href="#">Admisiones</a></li>
+                        <li><a href="#">Biblioteca Digital</a></li>
+                        <li><a href="#">Bolsa de Trabajo</a></li>
+                        <li><a href="https://transparencia.tabasco.gob.mx/ciudadano/dependencia/fracciones/73/5/">Transparencia</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="https://m.facebook.com/107347049418324/">Facebook</a></li>
+                        <li><a href="https://x.com/UPCTabasco">X</a></li>
+                        <li><a href="https://www.instagram.com/upctabasco/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@papillonupc6087">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universidad Politécnica del Centro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7oZ_cWcUISAEkjEiTQJgTyPmunSCSSmY&callback=initMap" async defer></script>
+</body>
+</html>
